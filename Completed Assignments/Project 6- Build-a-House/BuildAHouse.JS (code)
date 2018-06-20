@@ -1,0 +1,27 @@
+background(219, 255, 255);
+
+fill(174, 180, 214);
+triangle(200, 28, 350, 150, 50, 150);// roof 
+
+fill(255, 255, 255);
+rect(60, 150, 280, 207);//house 
+
+for (var i =0; i < 5; i++){
+    var w =55; 
+    image(getImage("cute/PlainBlock"), 63 + i*w, 135, w, w); 
+    
+}
+
+fill(120, 80, 19);
+rect(180, 280, 40, 77);// door 
+
+fill(67, 99, 13);
+rect(0, 360,400, 40);  
+
+
+for(var i = 0; i < 3; i++){
+    fill(15, 73, 166);
+    rect(100 + 70*i, 200, 60, 45); 
+}
+
+
