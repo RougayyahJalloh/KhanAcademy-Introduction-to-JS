@@ -1,0 +1,52 @@
+var bodyX = 200;
+var bodyY = 220;
+var bodyW = 200;
+var bodyH = bodyW/2; 
+
+
+//starting size for mouth 
+    var mouthsize = 90; 
+    var ears = 80; 
+    
+draw = function() {
+    background(207, 254, 255);
+    
+
+    fill(92, 42, 14);
+     ellipse(100, 150, ears, ears); //ears 
+     ellipse(280, 145, ears, ears); 
+
+      //part of body
+      fill(112, 73, 33);
+       ellipse(200, 400, bodyW, 200);
+
+
+
+ fill(112, 73, 33);
+    ellipse(bodyX, bodyY, bodyW, 200); //head 
+    
+    //eyes 
+    fill(255, 255, 255);
+    noStroke(); 
+    ellipse(150, 185, 40, 40); 
+    ellipse(240, 185, 40, 40); 
+    
+    //pupils 
+    fill(10, 10, 10);
+    ellipse(150, 195, 30, 20); 
+      ellipse(240, 195, 30, 20); 
+      
+      //nose
+      fill(212, 142, 142);
+      rect(180, 210, 30, 20); 
+      
+      //mouth 
+      fill(26, 16, 3);
+      ellipse (200, 280, mouthsize, 60); 
+      
+
+
+ears = ears +1; 
+      
+};
+
