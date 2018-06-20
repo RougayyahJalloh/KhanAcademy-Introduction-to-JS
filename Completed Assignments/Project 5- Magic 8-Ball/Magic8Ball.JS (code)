@@ -1,0 +1,39 @@
+fill(0, 0, 0);
+ellipse(200, 200, 375, 375);
+fill(172, 158, 219);
+triangle(200, 104, 280, 280, 120, 280);
+fill(255, 255, 255);
+var answer = floor(random(1, 5));
+if (answer === 1) {
+    fill(255, 0, 0);
+    text("NOPE", 180, 200);
+    text("NOT HAPPENING", 153, 249); 
+}
+else if (answer === 2){
+    fill(22, 90, 179);
+    text("FOR SURE", 171, 229); 
+}
+
+else if (answer === 3){
+    fill(222, 20, 161);
+    text("IN", 192, 200); 
+    text("YOUR DREAMS", 159, 229); 
+}
+
+else if (answer === 4){
+    fill(51, 115, 11);
+    text("YES", 182, 200); 
+    text("TRUE!!", 179, 229); 
+}
+
+
+
+
+
+
+
+
+
+
+    
+
