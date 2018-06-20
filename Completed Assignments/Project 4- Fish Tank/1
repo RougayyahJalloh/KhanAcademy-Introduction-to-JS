@@ -1,1 +1,49 @@
+background(89, 216, 255);
+
+var fish = function(x, y, tail_width){
+    pushMatrix(); 
+    translate(x, y); 
+
+var centerX = 0;
+var centerY = 0;
+var bodyLength = 118 + random(-10, 100);
+var bodyHeight = 74 + random(-10, 30);
+var bodyColor = color(162+ random(-100, 100), 0, 255 + random(-100,100));
+
+var pebblesx = 112; 
+var pebblesy = 30; 
+
+
+noStroke();
+fill(bodyColor);
+
+// body
+ellipse(centerX, centerY, bodyLength, bodyHeight);
+// tail
+var tailWidth = bodyLength/4;
+var tailHeight = bodyHeight/2;
+triangle(centerX-bodyLength/2, centerY,
+         centerX-bodyLength/2-tailWidth, centerY-tailHeight,
+         centerX-bodyLength/2-tailWidth, centerY+tailHeight);
+         
+         //pebbles 
+fill(87, 81, 81);
+         ellipse (pebblesx,pebblesy, 20, 20); 
+
+         
+         
+         
+         
+// eye
+fill(33, 33, 33);
+ellipse(centerX+bodyLength/4, centerY, bodyHeight/5, bodyHeight/5);
+popMatrix(); 
+
+         
+}; 
+
+for(var i = 0; i < 10; i++){
+    fish(random(0, 400),random(0, 400), random(-55, 333)); 
+}
+
 
